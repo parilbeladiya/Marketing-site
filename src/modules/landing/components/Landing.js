@@ -1,9 +1,9 @@
 import React from 'react';
 
+import IntroContainer from './Intro/IntroContainer';
+
 const Landing = () => (
-  <div>
-    <h1>Landing Page</h1>
-  </div>
+  <IntroContainer />
 );
 
 export default Landing;
