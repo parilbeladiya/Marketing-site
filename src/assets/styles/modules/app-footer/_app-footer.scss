@@ -1,0 +1,125 @@
+* {
+  font-family: 'Inter';
+  font-style: normal;
+}
+
+.main-footer-container {
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(90deg, rgba(255, 230, 230, 0.52) 0%, rgba(245, 255, 254, 0.52) 26.81%, rgba(252, 243, 255, 0.52) 54.58%, rgba(255, 244, 230, 0.52) 99.86%);
+  .footer-logo {     
+    font-weight: 700;
+    font-size: 65px;
+    line-height: 79px;
+    color: $primary-color-200;
+    margin: 58px 0 0 149px;
+  }
+
+  .middle-footer-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 26px 200px 0 151px;
+  }
+  .left-block-footer {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 36px;
+    letter-spacing: 0.02em;
+    color: $primary-color-100;
+  }
+  .social-media-icons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 39.41px;
+    img {
+      height: 44.17px;
+      width: 44.17px;
+      cursor: pointer;
+      margin-right: 63.1px ;
+    }
+  }
+
+  .middle-block-footer {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: $primary-color-300;   
+  }
+  .main-list {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.02em;
+    text-transform: none;
+    color: $primary-color-100;
+    margin-top: 39px;
+  }
+  .list {
+    margin: 20px 0;
+  }
+
+  .right-block-footer {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: $primary-color-300;
+  }
+  .right-sub-block-footer {
+    display: flex;
+    flex-direction: column;
+    margin-top: 39px;
+  }
+  .sub-block {
+    display: flex;
+    text-transform: none;
+    margin-bottom: 18px;
+    img {
+      height: 100px;
+      width: 100px;
+    }
+    .sub-block-right-side {
+      margin-left: 21px;
+      .tag {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+        color: $primary-color-300;
+        margin-bottom: 8px;
+      }
+      .discription {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 20px;
+        color: $primary-color-100;
+        margin-bottom: 14px;
+      }
+      .date {
+        font-weight: 400;
+        font-size: 10px;
+        line-height: 12px;
+        letter-spacing: 0.055em;
+        color: $primary-color-200;
+      }
+    }
+  }
+  
+  .bottom-footer-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 63px 150px;
+    align-items: center;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.02em;
+    color: $primary-color-100;
+    span {
+      color: $primary-color-300;
+    }
+  }
+}
+

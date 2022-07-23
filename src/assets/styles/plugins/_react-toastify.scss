@@ -1,0 +1,18 @@
+.Toastify__toast--success {
+    background: $success-color !important;
+}
+.Toastify__toast--warning {
+    background: $warning-color !important;
+}
+.Toastify__toast--error {
+    background: $error-color !important;
+}
+.Toastify__close-button {
+    color: $primary-color-400 !important;
+}
+.toastBody {
+    font-family: "Atlas Grotesk Web", Arial, Helvetica, sans-serif;
+    color: $primary-color-400;
+    font-size: 1rem !important;
+    font-weight: bold;
+}

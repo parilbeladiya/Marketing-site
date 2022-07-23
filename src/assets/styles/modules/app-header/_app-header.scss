@@ -1,0 +1,65 @@
+.app-header-container {
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  background: linear-gradient(90deg, #FFE6E6 0%, #F5FFFE 26.81%, #FCF3FF 54.58%, #FFF4E6 99.86%);
+  .app-name-wrapper {
+    display: flex;
+    align-items: center;
+    .app-name {
+        cursor: pointer;
+        color: $primary-color-200;
+        margin-top: 13px;
+        margin-left: 150px;
+        font-family: 'Inter';
+        font-weight: 700;
+        font-size: 65px;
+        line-height: 79px;
+    }
+  }
+  .menu-items-list {
+    display: flex;
+    align-items: center;
+    position: relative;
+    .nav-link {
+      color: $primary-color-100;
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 22px;
+      height: 22px;
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+      margin-top: 24px;
+      margin-left: 10px;
+      position: relative;
+    }
+    .nav-link::after {
+      content: '';
+      height: 2px;
+      width: 0;
+      background: $primary-color-200;
+      position: absolute;
+      left: 0;
+      bottom: -10px;
+      transition: 0.2s;
+    }
+    .nav-link:hover::after {
+       width: 100%;
+    }
+    .mui-button {
+      text-transform: none;
+      padding: 15px 44px;
+      margin: 24px 150px 0 38px;
+      background: $primary-color-200;
+      border-radius: 48px;
+      font-family: 'Inter';
+      font-style: normal;
+      font-size: 18px;
+      line-height: 22px;
+      color: $primary-color-400;
+    }
+  }
+}
