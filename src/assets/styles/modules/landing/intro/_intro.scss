@@ -10,17 +10,21 @@
   background: linear-gradient(90deg, #FFE6E6 0%, #F5FFFE 26.81%, #FCF3FF 54.58%, #FFF4E6 99.86%);
   .left-block-container {
     .text-header {
+      width: 579px;
+      height: 176px;
       font-weight: 700;
       font-size: 65px;
       line-height: 135%;
       text-transform: uppercase;
       color: $primary-color-100;
       margin: 199px 0 0 150px;
-      span {
+      .marketing {
         color: $primary-color-200;
       }
     }
     .text-title {
+        width: 583px;
+        height: 31px;
         font-weight: 500;
         font-size: 26px;
         line-height: 31px;
@@ -29,6 +33,8 @@
         margin: 40px 0 0 150px;
     }
     .text-discription {
+        width: 519px;
+        height: 57px;
         font-weight: 400;
         font-size: 18px;
         line-height: 22px;
@@ -39,23 +45,22 @@
       display: flex;
       align-items: center;
       margin: 71px 0 50px 150px;
-      button {
+      .start-button {
         background: $primary-color-200;
+        text-transform: inherit;
         border-radius: 62px;
-        border-style: none;
         padding: 14px 44px;
         font-size: 20px;
         line-height: 24px;
-        color: $primary-color-400;
       }
-      img {
+      .play-button {
         margin-left: 33px;
         height: 52px;
         width: 52px;
         background: $primary-color-400;
         border-radius: 1px;
       }
-      div {
+      .watch-video {
         margin-left: 13px;
         font-weight: 500;
         font-size: 20px;

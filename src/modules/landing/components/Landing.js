@@ -1,6 +1,6 @@
 import React from 'react';
 
-import IntroContainer from './Intro/IntroContainer';
+import IntroContainer from './intro/IntroContainer';
 
 const Landing = () => (
   <IntroContainer />
