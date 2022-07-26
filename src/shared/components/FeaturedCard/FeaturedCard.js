@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Card = ({ src, type }) => (
-  <div className={`card-component-${type}`}>
+const FeaturedCard = ({ src, className }) => (
+  <div className={`featured-card-component ${className}`}>
     <img className="logo" src={`${src}`} alt="card-logo" />
     <div className="title">I Want Leads</div>
     <div className="description">Looking to get higher ROI by improving website.</div>
@@ -10,14 +10,14 @@ const Card = ({ src, type }) => (
   </div>
 );
 
-Card.propTypes = {
-  type: PropTypes.string,
+FeaturedCard.propTypes = {
+  className: PropTypes.string,
   src: PropTypes.string,
 };
 
-Card.defaultProps = {
-  type: '',
+FeaturedCard.defaultProps = {
+  className: '',
   src: '',
 };
 
-export default Card;
+export default FeaturedCard;

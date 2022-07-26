@@ -1,32 +1,54 @@
 import {
-  Forbes,
-  Netflix,
-  Amazon,
-  Sej,
-  Entrepreneur,
+  forbes,
+  netflix,
+  amazon,
+  sej,
+  entrepreneur,
 } from '../../../../assets/icons/index';
 
 const featuredItems = [
   {
     key: 1,
-    name: Forbes,
+    name: forbes,
   },
   {
     key: 2,
-    name: Netflix,
+    name: netflix,
   },
   {
     key: 3,
-    name: Amazon,
+    name: amazon,
   },
   {
     key: 4,
-    name: Sej,
+    name: sej,
   },
   {
     key: 5,
-    name: Entrepreneur,
+    name: entrepreneur,
   },
 ];
 
-export default featuredItems;
+const listItems = [
+  {
+    key: 1,
+    name: 'PageTraffic offers top-notch SEO and digital',
+  },
+  {
+    key: 2,
+    name: 'PageTraffic offers top-notch SEO.',
+  },
+  {
+    key: 3,
+    name: 'PageTraffic offers top-notch.',
+  },
+  {
+    key: 4,
+    name: 'PageTraffic offers top-notch SEO and.',
+  },
+];
+
+export {
+  featuredItems,
+  listItems,
+};

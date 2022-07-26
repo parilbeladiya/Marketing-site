@@ -5,11 +5,11 @@ import youtube from './youtube.svg';
 import play from './play.svg';
 import marketingBoy from './marketing-boy.svg';
 import marketingRing from './marketing-ring.svg';
-import Forbes from './feature-1.svg';
-import Netflix from './feature-2.svg';
-import Amazon from './feature-3.svg';
-import Sej from './feature-4.svg';
-import Entrepreneur from './feature-5.svg';
+import forbes from './feature-1.svg';
+import netflix from './feature-2.svg';
+import amazon from './feature-3.svg';
+import sej from './feature-4.svg';
+import entrepreneur from './feature-5.svg';
 import listIcon from './list-icon.svg';
 import vector from './vector.svg';
 import search from './search.svg';
@@ -22,11 +22,11 @@ export {
   play,
   marketingBoy,
   marketingRing,
-  Forbes,
-  Netflix,
-  Amazon,
-  Sej,
-  Entrepreneur,
+  forbes,
+  netflix,
+  amazon,
+  sej,
+  entrepreneur,
   listIcon,
   vector,
   search,

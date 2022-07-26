@@ -1,28 +1,9 @@
 import React from 'react';
 import { Button } from '@mui/material';
 
-import featuredItems from './featured-items';
+import { featuredItems, listItems } from './featured-items';
 import { listIcon, vector, search } from '../../../../assets/icons';
-import CardContainer from '../../../../shared/components/card/CardContainer';
-
-const listItems = [
-  {
-    key: 1,
-    name: 'PageTraffic offers top-notch SEO and digital',
-  },
-  {
-    key: 2,
-    name: 'PageTraffic offers top-notch SEO.',
-  },
-  {
-    key: 3,
-    name: 'PageTraffic offers top-notch.',
-  },
-  {
-    key: 4,
-    name: 'PageTraffic offers top-notch SEO and.',
-  },
-];
+import FeaturedCardContainer from '../../../../shared/components/FeaturedCard/FeaturedCardContainer';
 
 const WorkFeatured = () => (
   <div className="main-work-featured-container">
@@ -64,12 +45,12 @@ const WorkFeatured = () => (
       </div>
       <div className="right-side-wrapper">
         <div className="left-block-container">
-          <CardContainer src={vector} type="red" />
-          <CardContainer src={search} type="blue" />
+          <FeaturedCardContainer src={vector} className="red" />
+          <FeaturedCardContainer src={search} className="blue" />
         </div>
         <div className="right-block-container">
-          <CardContainer src={search} type="blue" />
-          <CardContainer src={vector} type="red" />
+          <FeaturedCardContainer src={search} className="blue" />
+          <FeaturedCardContainer src={vector} className="red" />
         </div>
       </div>
     </div>
