@@ -1,0 +1,61 @@
+.portfolio-main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 75px;
+    .portfolio-header {
+        font-weight: 700;
+        font-size: 45px;
+        letter-spacing: 0.025em;
+        color: $primary-color-100;
+    }
+    .navigation-bar {
+        margin: 55px 200px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .nav-text {
+            font-weight: 400;
+            font-size: 18px;
+            color: $primary-color-100;
+            margin: 0 25px;
+            cursor: pointer;
+            position: relative;
+        }
+        .nav-text::after {
+            content: '';
+            height: 2px;
+            width: 0;
+            background: $primary-color-200;
+            position: absolute;
+            left: 0;
+            bottom: -10px;
+            transition: 0.2s;
+          }
+          .nav-text:hover::after {
+             width: 100%;
+          }
+    }
+    .portfolio-cards-items {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 0 140px;
+        .portfolio-card {
+            margin: 10px;
+        }
+    }
+    .view-more {
+        margin: 75px 625px 50px;
+        width: 173px;
+        height: 52px;
+        font-weight: 500;
+        font-size: 18px;
+        text-transform: none;
+        color: $primary-color-400;
+        background: $primary-color-300;
+        box-shadow: 0px 4px 12px rgba(46, 196, 182, 0.48);
+        border-radius: 10px;
+    }
+}

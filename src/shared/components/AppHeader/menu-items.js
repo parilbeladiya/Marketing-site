@@ -15,9 +15,9 @@ const menuItems = [
     path: '/who-we-are',
   },
   {
-    name: 'Our Protfolio',
-    key: 'our-protfolio',
-    path: '/our-protfolio',
+    name: 'Our Portfolio',
+    key: 'our-portfolio',
+    path: '/our-portfolio',
   },
   {
     name: 'About Us',
