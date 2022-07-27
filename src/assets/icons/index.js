@@ -23,6 +23,10 @@ import client1Tag from './client-1-tag.svg';
 import client2Tag from './client-2-tag.svg';
 import client3Tag from './client-3-tag.svg';
 import client4Tag from './client-4-tag.svg';
+import blog1 from './blog-1.svg';
+import blog2 from './blog-2.svg';
+import blog3 from './blog-3.svg';
+import blog4 from './blog-4.svg';
 
 export {
   facebook,
@@ -50,4 +54,8 @@ export {
   client2Tag,
   client3Tag,
   client4Tag,
+  blog1,
+  blog2,
+  blog3,
+  blog4,
 };
