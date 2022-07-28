@@ -21,11 +21,7 @@ const AppFooter = () => (
     <div className="middle-footer-container">
       <div className="left-block-footer">
         <div>
-          FindBestSEO has ranked PageTraffic
-          <br />
-          among the top 10 SEO companies for
-          <br />
-          2020.
+          FindBestSEO has ranked PageTraffic among the top 10 SEO companies for 2020.
         </div>
         <div className="social-media-icons">
           <img src={facebook} alt="facebook" />
@@ -48,25 +44,21 @@ const AppFooter = () => (
         <div>Latest news</div>
         <div className="right-sub-block-footer">
           <div className="sub-block">
-            <img src={footer1} alt="footer1" />
+            <img className="footer-news" src={footer1} alt="footer1" />
             <div className="sub-block-right-side">
               <div className="tag">Per Click Management</div>
-              <div className="discription">
-                PageTraffic is a premier Search
-                <br />
-                Engine Marketing ( SEM).
+              <div className="description">
+                PageTraffic is a premier Search Engine Marketing (SEM).
               </div>
               <li className="date">15 April 2021</li>
             </div>
           </div>
           <div className="sub-block">
-            <img src={footer2} alt="footer2" />
+            <img className="footer-news" src={footer2} alt="footer2" />
             <div className="sub-block-right-side">
               <div className="tag">Per Click Management</div>
-              <div className="discription">
-                PageTraffic is a premier Search
-                <br />
-                Engine Marketing ( SEM).
+              <div className="description">
+                PageTraffic is a premier Search Engine Marketing (SEM).
               </div>
               <li className="date">15 April 2021</li>
             </div>

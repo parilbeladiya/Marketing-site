@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import Button from '@mui/material/Button';
 
 const BlogCard = ({
   className,
@@ -19,7 +20,7 @@ const BlogCard = ({
         {`${title}`}
       </div>
       <div className="description">Promotion World has once placed PageTraffic among the top.</div>
-      <div className="more">Read more  &#10132;</div>
+      <Button className="read-more">Read more  &#10132;</Button>
     </div>
   </div>
 );
