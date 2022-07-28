@@ -3,8 +3,6 @@ import linkedin from './linkedin.svg';
 import twitter from './twitter.svg';
 import youtube from './youtube.svg';
 import play from './play.svg';
-import marketingBoy from './marketing-boy.svg';
-import marketingRing from './marketing-ring.svg';
 import forbes from './feature-1.svg';
 import netflix from './feature-2.svg';
 import amazon from './feature-3.svg';
@@ -34,8 +32,6 @@ export {
   twitter,
   youtube,
   play,
-  marketingBoy,
-  marketingRing,
   forbes,
   netflix,
   amazon,

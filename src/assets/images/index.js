@@ -6,6 +6,7 @@ import portfolio3 from './portfolio-3.jpeg';
 import portfolio4 from './portfolio-4.jpeg';
 import portfolio5 from './portfolio-5.jpeg';
 import portfolio6 from './portfolio-6.jpeg';
+import marketingBoy from './marketing-boy.png';
 
 export {
   footer1,
@@ -16,4 +17,5 @@ export {
   portfolio4,
   portfolio5,
   portfolio6,
+  marketingBoy,
 };

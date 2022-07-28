@@ -8,7 +8,7 @@ const Portfolio = () => (
     <div className="portfolio-header">Our Portfolio</div>
     <div className="navigation-bar">
       { navigationItems.map((navigationItem) => (
-        <div className="nav-text" key={navigationItem.key}>{navigationItem.name}</div>
+        <Button className="nav-text" key={navigationItem.key}>{navigationItem.name}</Button>
       ))}
     </div>
     <div className="portfolio-cards-items">

@@ -16,7 +16,7 @@ const AppHeader = ({ handleNavigate }) => (
     <div className="menu-items">
       <div className="menu-items-list">
         { menuItems.map((menuItem) => (
-          <button type="button" className="nav-link" key={menuItem.key} name={menuItem.key} onClick={handleNavigate}>{menuItem.name}</button>
+          <Button className="nav-link" key={menuItem.key} name={menuItem.key} onClick={handleNavigate}>{menuItem.name}</Button>
         ))}
         <Button className="mui-button" color="primary">Contacts</Button>
       </div>
