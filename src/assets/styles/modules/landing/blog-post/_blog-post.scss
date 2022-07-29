@@ -40,7 +40,6 @@
         .blog-post-card-container {
             display: flex;
             width: 560px;
-            height: 270px;
             margin: 20px 10px;
             background: $primary-color-370;
             border: 3px solid $primary-color-220;
@@ -50,7 +49,7 @@
             }
             .right-side-block {
                 color: $primary-color-100;
-                padding: 20px;
+                padding: 20px 20px 0;
                 .date {
                     margin-top: 25px;
                     font-weight: 400;
@@ -89,5 +88,43 @@
                 }
             }
         }
+    }
+}
+
+$breakpoint-1340: 1340px;
+@media (max-width: $breakpoint-1340) {
+    .blog-post-main-wrapper {
+        padding: 45px 100px;
+    }
+}
+
+$breakpoint-1120: 1120px;
+@media (max-width: $breakpoint-1120) {
+    .blog-post-main-wrapper {
+        padding: 45px 80px;
+        zoom: 0.9;
+    }
+}
+
+$breakpoint-900: 900px;
+@media (max-width: $breakpoint-900) {
+    .blog-post-main-wrapper {
+        padding: 45px 50px;
+        zoom: 0.8;
+    }
+}
+
+$breakpoint-620: 620px;
+@media (max-width: $breakpoint-620) {
+    .blog-post-main-wrapper {
+        padding: 45px 30px;
+        zoom: 0.7;
+    }
+}
+
+$breakpoint-550: 550px;
+@media (max-width: $breakpoint-550) {
+    .blog-post-main-wrapper {
+        zoom: 0.6;
     }
 }

@@ -60,3 +60,59 @@
         border-radius: 10px;
     }
 }
+
+   
+$breakpoint-1340: 1340px;
+@media (max-width: $breakpoint-1340) {
+    .portfolio-main-container {
+        padding: 35px 100px;
+        .navigation-bar {
+            .nav-text {
+                margin: 0 20px;
+            }
+            .nav-text::after {
+                bottom: -5px;
+            }
+        }
+    }
+}
+
+$breakpoint-1120: 1120px;
+@media (max-width: $breakpoint-1120) {
+  .portfolio-main-container {
+    padding: 35px 80px;
+    zoom: 0.9;
+  }
+}
+
+$breakpoint-900: 900px;
+@media (max-width: $breakpoint-900) {
+  .portfolio-main-container {
+    padding: 35px 50px;
+    zoom: 0.8;
+    .navigation-bar {
+        .nav-text {
+            margin: 0 10px;
+        }
+        .nav-text::after {
+            bottom: -3px;
+        }
+    }
+  }
+}
+
+$breakpoint-620: 620px;
+@media (max-width: $breakpoint-620) {
+  .portfolio-main-container {
+    padding: 35px 30px;
+    zoom: 0.7;
+    .navigation-bar {
+        .nav-text {
+            margin: 0 5px;
+        }
+        .nav-text::after {
+            bottom: -2px;
+        }
+    }
+  }
+}
