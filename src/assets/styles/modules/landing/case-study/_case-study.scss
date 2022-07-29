@@ -65,3 +65,56 @@
     }   
 }
     
+$breakpoint-1340: 1340px;
+@media (max-width: $breakpoint-1340) {
+    .case-study-container {
+        padding: 40px 100px;
+    }
+}
+
+$breakpoint-1260: 1260px;
+@media (max-width: $breakpoint-1260) {
+    .case-study-container {
+        padding: 40px 80px;
+        zoom: 0.9;
+    }
+}
+
+$breakpoint-1080: 1080px;
+@media (max-width: $breakpoint-1080) {
+    .case-study-container {
+        padding: 40px 70px;
+        zoom: 0.8;
+    }
+}
+
+$breakpoint-980: 980px;
+@media (max-width: $breakpoint-980) {
+    .case-study-container {
+        zoom: 0.7;
+        padding: 40px 50px;
+        .bottom-case-study-wrapper {
+            flex-wrap: wrap;
+            justify-content: center;
+            .left-side-container {
+                padding: 10px;
+            }
+            .right-side-container {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                .client-card-component {
+                    margin: 10px;
+                }
+            }
+        }   
+    }
+}
+
+$breakpoint-550: 550px;
+@media (max-width: $breakpoint-550) {
+    .case-study-container {
+        padding: 40px 30px;
+        zoom: 0.6;
+    }
+}
