@@ -1,18 +1,14 @@
-import React from 'react';
-
+import React, { useState } from 'react';
 import { useNavigate } from 'react-router';
-
 import { connect } from 'react-redux';
-
 import PropTypes from 'prop-types';
 
 import updateCurrentPage from '../../../modules/dashboard/redux/actions';
-
 import AppHeader from './AppHeader';
-
 import noop from '../../../utils';
 
 const AppHeaderContainer = ({ setCurrentPage }) => {
+  const [isNavExpanded, setIsNavExpanded] = useState(false);
   const navigate = useNavigate();
 
   const handleNavigate = (e) => {
@@ -20,7 +16,11 @@ const AppHeaderContainer = ({ setCurrentPage }) => {
     navigate(`/${e.target.name}`);
   };
   return (
-    <AppHeader handleNavigate={handleNavigate} />
+    <AppHeader
+      handleNavigate={handleNavigate}
+      isNavExpanded={isNavExpanded}
+      setIsNavExpanded={setIsNavExpanded}
+    />
   );
 };
 
