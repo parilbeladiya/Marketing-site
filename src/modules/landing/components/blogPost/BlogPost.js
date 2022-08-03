@@ -19,6 +19,7 @@ const BlogPost = () => (
           src={blogItem.src}
           date={blogItem.date}
           title={blogItem.title}
+          description={blogItem.description}
         />
       ))}
     </div>

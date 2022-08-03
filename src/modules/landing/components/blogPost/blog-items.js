@@ -12,6 +12,7 @@ const blogItems = [
     src: blog1,
     date: '09 Apr, 2022/ By Admin',
     title: 'UI/UX design Tips',
+    description: 'Promotion World has once placed PageTraffic among the top.',
   },
   {
     key: 1,
@@ -19,6 +20,7 @@ const blogItems = [
     src: blog2,
     date: '19 Feb, 2022/ By Admin',
     title: 'Improve your UX/UI',
+    description: 'Promotion World has once placed PageTraffic among the top.',
   },
   {
     key: 1,
@@ -26,6 +28,7 @@ const blogItems = [
     src: blog3,
     date: '25 Jon, 2022/ By Admin',
     title: 'Meta Technology.',
+    description: 'Promotion World has once placed PageTraffic among the top.',
   },
   {
     key: 1,
@@ -33,6 +36,7 @@ const blogItems = [
     src: blog4,
     date: '13 Nov, 2022/ By Admin',
     title: 'PageTraffic Ranks',
+    description: 'Promotion World has once placed PageTraffic among the top.',
   },
 ];
 
