@@ -8,8 +8,9 @@ const BlogCardContainer = ({
   src,
   date,
   title,
+  description,
 }) => (
-  <BlogCard className={className} src={src} date={date} title={title} />
+  <BlogCard className={className} src={src} date={date} title={title} description={description} />
 );
 
 BlogCardContainer.propTypes = {
@@ -17,6 +18,7 @@ BlogCardContainer.propTypes = {
   src: PropTypes.string,
   date: PropTypes.string,
   title: PropTypes.string,
+  description: PropTypes.string,
 };
 
 BlogCardContainer.defaultProps = {
@@ -24,6 +26,7 @@ BlogCardContainer.defaultProps = {
   src: '',
   date: '',
   title: '',
+  description: '',
 };
 
 export default BlogCardContainer;

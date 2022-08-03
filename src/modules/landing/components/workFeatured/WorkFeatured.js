@@ -1,11 +1,18 @@
+/* eslint-disable camelcase */
 import React from 'react';
+import PropTypes from 'prop-types';
 import { Button } from '@mui/material';
 
 import { featuredItems, listItems } from './featured-items';
 import { listIcon, vector, search } from '../../../../assets/icons';
 import FeaturedCardContainer from '../../../../shared/components/FeaturedCard/FeaturedCardContainer';
 
-const WorkFeatured = () => (
+const WorkFeatured = ({
+  title,
+  description,
+  total_audience,
+  complete_project,
+}) => (
   <div className="main-work-featured-container">
     <div className="main-top-container">
       <div className="top-header">Our work featured on</div>
@@ -17,11 +24,9 @@ const WorkFeatured = () => (
     </div>
     <div className="main-bottom-container">
       <div className="left-side-wrapper">
-        <div className="title-content">HOW PAGETRAFFIC CREATES HYPER BUSINESS GROWTH</div>
+        <div className="title-content">{title}</div>
         <div className="description-content">
-          PageTraffic offers top-notch SEO and digital
-          marketing solutions to help you rank high on search
-          results, connect with.
+          {description}
         </div>
         <div className="list-content">
           { listItems.map((listItem) => (
@@ -33,11 +38,11 @@ const WorkFeatured = () => (
         </div>
         <div className="data-container">
           <div className="data-content">
-            <div className="left-milestone">1.9k</div>
+            <div className="left-milestone">{total_audience}</div>
             <div className="data-type">Total Audience</div>
           </div>
           <div className="data-content">
-            <div className="right-milestonr">5.7k</div>
+            <div className="right-milestonr">{complete_project}</div>
             <div className="data-type">Complete Project</div>
           </div>
         </div>
@@ -56,5 +61,19 @@ const WorkFeatured = () => (
     </div>
   </div>
 );
+
+WorkFeatured.propTypes = {
+  title: PropTypes.string,
+  description: PropTypes.string,
+  total_audience: PropTypes.string,
+  complete_project: PropTypes.string,
+};
+
+WorkFeatured.defaultProps = {
+  title: '',
+  description: '',
+  total_audience: '',
+  complete_project: '',
+};
 
 export default WorkFeatured;

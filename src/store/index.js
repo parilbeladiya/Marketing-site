@@ -1,20 +1,14 @@
-import { compose, createStore, applyMiddleware } from 'redux';
-
-import logger from 'redux-logger';
+import { compose, legacy_createStore as createStore, applyMiddleware } from 'redux';
+import thunk from 'redux-thunk';
+import { createPromise } from 'redux-promise-middleware';
 
 import rootReducer from './rootReducer';
 
-const middlewares = [process.env.NODE_ENV !== 'production' && logger].filter(
-  Boolean,
-);
+const composeEnhancer = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 
-const composeEnhancer = (process.env.NODE_ENV !== 'production'
-    && window
-    && window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__)
-    || compose;
-
-const composedEnhancers = composeEnhancer(applyMiddleware(...middlewares));
-
-const store = createStore(rootReducer, undefined, composedEnhancers);
+const store = createStore(rootReducer, composeEnhancer(applyMiddleware(
+  createPromise({ promiseTypeSuffixes: ['LOADING', 'SUCCESS', 'ERROR'] }),
+  thunk,
+)));
 
 export default store;

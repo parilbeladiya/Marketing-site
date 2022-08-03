@@ -7,6 +7,7 @@ const BlogCard = ({
   src,
   date,
   title,
+  description,
 }) => (
   <div className={`blog-post-card-container ${className}`}>
     <div className="left-side-block">
@@ -19,7 +20,7 @@ const BlogCard = ({
       <div className="title">
         {`${title}`}
       </div>
-      <div className="description">Promotion World has once placed PageTraffic among the top.</div>
+      <div className="description">{`${description}`}</div>
       <Button className="read-more">Read more  &#10132;</Button>
     </div>
   </div>
@@ -30,6 +31,7 @@ BlogCard.propTypes = {
   src: PropTypes.string,
   date: PropTypes.string,
   title: PropTypes.string,
+  description: PropTypes.string,
 };
 
 BlogCard.defaultProps = {
@@ -37,6 +39,7 @@ BlogCard.defaultProps = {
   src: '',
   date: '',
   title: '',
+  description: '',
 };
 
 export default BlogCard;
